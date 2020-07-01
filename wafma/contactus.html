@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+	  <meta charset="utf-8"> 
+	  <title>Contact us</title>
+      <meta  name="viewport" content="width=device-width, initial-scale=1.0" >
+      <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <![endif]-->
+      <link rel="stylesheet" href="styles/styles.css">
+     
+   </head>
+   <body>
+      <div id="pagewrapper">
+         <header id="pageheader" role="banner">
+            <nav   id="headerlinks" role="navigation">
+               <ul>
+                  <li><a href="#" class="current" >Contact us</a></li>
+                  <li><a href="#">Accessiblity</a></li>
+                  <li><a href="#">Login</a>
+                  </li>
+               </ul>
+            </nav>
+            <a href="#intro" class="skiplink">Skip to page content</a>	
+            <h1><span id="emblem">Emblem</span><span id="forceDownALine" >Rare, Collectible Books</span></h1>
+            <nav class="highlight" id="primarynav" role="navigation">
+               <ul>
+                  <li> <a href="index.html"  >Home</a></li>
+                  <li> <a href="books.html">Books</a></li>
+                  <li> <a href="delivery.html">Delivery</a></li>
+                  <li> <a href="#">About us</a></li>
+                  <li> <a href="#">Books as an Investment</a></li>
+               </ul>
+            </nav >
+         </header>
+         <nav id="breadcrumbs" role="navigation">
+            <p><a href="index.html">Home</a> &rarr;  <span class="current">Contact us</span></p>
+         </nav>
+         <main role="main">
+            <section id="intro">
+               <h2>Contact us</h2>
+               <a href="#pagefooter" class="skiplink">Skip to page footer</a>
+               <p>Please feel free to contact is if you are looking to buy a book not listed in our collection, or you are looking to sell a book, have a book valued or have a book repaired. We try to answer all queries within 24 hours of receipt. </p>
+               <form method="post" action="http://titan.dcs.bbk.ac.uk/~ubseaxt/process.php">
+                  <fieldset>
+                     <legend>Send us a message</legend>
+                     <div class="controlgroup">
+                        <label for="title">Title</label>
+                        <select aria-required="true"   name="title" id="title">
+                           
+                           <option value="Mrs">Mrs</option>
+                           <option value="Miss">Miss</option>
+                           <option value="Ms">Ms</option>
+                           <option value="Mr">Mr</option>
+                           <option value="Dr">Dr</option>
+                           <option value="Prof">Prof</option>
+                        </select>
+                     </div>
+                     <div class="controlgroup">
+                        <label for="mail"> Your email address</label>
+                        <input aria-required="true" required type="email" name="email" id="mail" placeholder="Your full email address"/>
+                     </div>
+                     <div class="controlgroup">
+                        <label for="fname">Full name</label>
+                        <input aria-required="true" required type="text" name="fullname" id="fname"/>
+                     </div>
+                     <div class="controlgroup">
+                        <label for="query">Nature of query</label>
+                        <select aria-required="true"   name="queryNature" id="query" >
+                           
+                           <option value="1">Buy books</option>
+                           <option value="2">Sell books</option>
+                           <option value="3">Return a book</option>
+                           <option value="4">Delivery</option>
+                           <option value="5">Complaint</option>
+                           <option value="6">Other</option>
+                        </select>
+                     </div>
+                     <div class="controlgroup">
+                        <label for="msg">Message</label>
+                        <textarea aria-required="true" required placeholder="Type your message here" name="message"  id="msg"></textarea>
+                     </div>
+                     <input type="submit" name="sendmessage" value="Send"/> 
+                  </fieldset>
+               </form>
+               <a href="#pageheader" class="skiplink">Skip to page header</a>
+            </section>
+         </main>
+         <footer id="pagefooter" role="contentinfo">
+            <nav class="highlight" id="footerlinks">
+               <ul>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">Returns</a>
+                  </li>
+               </ul>
+            </nav>
+         </footer>
+      </div>
+   </body>
+</html>

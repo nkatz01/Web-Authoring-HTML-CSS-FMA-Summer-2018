@@ -1,0 +1,492 @@
+* {
+     padding: 0;
+     margin: 0 auto;
+     font-size: 100%;
+}
+ 
+/* Daclaring the fonts used later in the file*/
+ @font-face {
+     font-family: 'parisian';
+     src:url("../fonts/parisr.eot?#iefix") format("embedded-opentype"), url("../fonts/parisr.woff") format("woff"), url("../fonts/parisr.ttf") format("truetype"), url("../fonts/parisr.svg#roboto_slabbold") format("svg");
+     font-weight: normal;
+     font-style: normal;
+}
+/*Setting the font and margins for body*/
+ body {
+     font-family: Arial, Verdana, Helvetica;
+     margin-top: 1em;
+     margin-bottom: 1em;
+	 background-color: #A2FFCB; 
+}
+/*setting fluid width and centering page*/
+ #pagewrapper{
+     width: 90%;
+     margin: 0 auto;
+}
+
+/*positioning header links*/
+ @media screen and (min-width: 660px) {
+     #headerlinks {
+         float: right;
+         margin: 1em;
+    }
+     #headerlinks li:last-child {
+         margin-right: 0;
+    }
+     #headerlinks li {
+         float: left;
+         margin: 0.5em;
+    }
+   
+}
+ 
+/*positioning primary, secondary and footer navigation links*/
+ #primarynav {
+     clear: both;
+	
+}
+
+ @media screen and (min-width: 400px) {
+     nav.highlight li {
+         float: left;
+         margin: 1em;
+    }
+     nav.highlight ul > li {
+         margin-left: 0;
+    }
+}
+
+/*positioning logo and logo image depending on screen size*/
+ h1 {
+     font-family: 'parisian';
+     margin-top: 0.5em;
+     margin-bottom: 0.5em;
+     white-space: nowrap;
+	 color: #236841;
+}
+ @media screen and (min-width: 750px) {
+     body{
+         font-size: 16px;
+    }
+     #emblem {
+         padding-bottom: 1em;
+         padding-right: 2.5em;
+         background-image: url("../logo/emblem_logo_144.png");
+         background-repeat: no-repeat;
+         background-position:right top;
+		 
+    }
+     h1 {
+         font-size: 4em;
+		 
+    }
+     #forceDownALine{
+         padding-top: 0.5em;
+         display: block;
+    }
+}
+ @media screen and (max-width: 750px) {
+     body{
+         font-size: 14px;
+    }
+     #emblem {
+         padding-bottom: 1em;
+         padding-right: 2.5em;
+         background-image: url("../logo/emblem_logo_128.png");
+         background-repeat: no-repeat;
+         background-position:right top;
+    }
+     h1 {
+         font-size: 4em;
+    }
+     #forceDownALine{
+         padding-top: 0.5em;
+         display: block;
+    }
+}
+ @media screen and (max-width: 600px) {
+     body{
+         font-size: 12px;
+    }
+     #emblem {
+         padding-bottom: 1em;
+         padding-right: 2.5em;
+         background-image: url("../logo/emblem_logo_96.png");
+         background-repeat: no-repeat;
+         background-position:right top;
+    }
+     h1 {
+         font-size: 3em;
+    }
+     #forceDownALine{
+         padding-top: 0.5em;
+         display: block;
+    }
+}
+ @media screen and (max-width: 420px) {
+     body{
+         font-size: 10px;
+    }
+     #emblem {
+         padding-bottom: 1em;
+         padding-right: 2.5em;
+         background-image: url("../logo/emblem_logo_64.png");
+         background-repeat: no-repeat;
+         background-position:right top;
+    }
+    /* */
+     h1 {
+         font-size: 2.5em;
+    }
+     #forceDownALine{
+         padding-top: 0.5em;
+         display: block;
+    }
+}
+ 
+
+@media screen and (max-width: 270px) {
+     body{
+         font-size: 8px;
+    }
+     #emblem {
+         padding-bottom: 1em;
+         padding-right: 3.5em;
+         background-image: url("../logo/emblem_logo_64.png");
+         background-repeat: no-repeat;
+         background-position:right top;
+    }
+    /* */
+     h1 {
+         font-size: 2.4em;
+    }
+     #forceDownALine{
+         padding-top: 0.7em;
+         display: block;
+		  
+    }
+}
+/*positioning bradcrubms and minimizing font size*/
+ #breadcrumbs {
+     clear: left;
+     padding-top: 0.5em;
+     font-size: 0.75em;
+}
+/* clearing float for text after navigations*/
+ #intro h2 {
+     clear: both;
+}
+/*wrapping text around images*/
+ section img, aside img {
+     float: left;
+}
+ section img, article img , aside img{
+     padding-right: 1em;
+     padding-top: 0.5em;
+}
+/*clearing float from h3s on 19-th century book page on small screens*/
+ @media screen and (max-width: 300px) {
+     article h3 {
+         float: none;
+         clear: both;
+    }
+}
+/*break float at new section or article*/
+ section, article {
+     clear: left;
+     padding-top: 2em;
+     overflow: hidden;
+}
+/*wrap images on book page upon screen adjustment*/
+ #bookpageimgs {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: left; 
+     padding-bottom: 1.5em;
+ }
+
+/*clear float text following section on bookpage */
+
+
+ .bookpage   img {
+     border: 1px solid black;
+	 
+     padding-right: 0.5em;
+     padding-left: 0.5em;
+     padding-bottom: 0.5em;
+     margin: 1.5em;
+     border-radius: 0.25em;
+     box-shadow: 1px 1px 0 0 #000000;
+}
+ 
+
+  @media screen and (max-width: 320px) {
+	 #bookpageimgs {
+	justify-content: center; 
+	 }
+ }  
+figure figcaption  p {
+	
+	margin-left: 1.5em; 
+	position: absolute; 
+ 
+}
+ 
+/*allowing room for the aside on the index page and setting format for various locations of text*/
+ .toTheLeft{
+     float: left;
+}
+ .toTheLeft p, .toTheLeft ul , aside p , .bookpage > p {
+     padding-top: 1em;
+     padding-bottom: 1em;
+}
+/*controlling aside return when browser  is minimized */
+ @media screen and (min-width: 1150px) {
+     aside {
+         float: right;
+         width: 33%;
+         overflow: hidden;
+    }
+     .toTheLeft{
+         float: left;
+         width: 58%;
+    }
+}
+/*positioning video element in index page*/
+ @media screen and (min-width: 1300px) {
+     #mediaframe {
+         float: right;
+         overflow: hidden;
+		  
+    }
+     video{
+         float: left;
+         width: 420px;
+		
+    }
+	
+}
+ @media screen and (min-width: 1430px) {
+     video{
+         float: right;
+         width: 480px;
+    }
+}
+
+ @media screen and (max-width: 550px) {
+     video{
+         width: 380px;
+		 height: 90%;
+    }
+}
+ @media screen and (max-width: 450px) {
+     video{
+         width: 300px;
+		  height: 90%;
+    }
+}
+ @media screen and (max-width: 350px) {
+     video{
+         width: 200px;
+		 height: 90%; 
+    }
+}
+/*clearing float of price and investement rating on 19th century page  */
+ em {
+     display: block;
+     float: none;
+     clear: both;
+}
+/*positioning of final section in index page*/
+ #valuingbooks {
+     float: left;
+}
+/*positioning and formating  of generic elements */
+ h2 {
+     font-size: 1.5em;
+     margin-bottom: 0.25em;
+     overflow: hidden;
+}
+ h3 {
+     font-size: 1em;
+     margin-top: 1em;
+     margin-bottom: 0.125em;
+     overflow: hidden;
+}
+ h4 {
+     font-size: 0.75em;
+     margin-bottom: 0.625em;
+     margin-top: 1em;
+}
+ p {
+     font-size: 0.875em;
+     line-height: 1.5;
+}
+/*positioning of table in delivery page and form in contact us page */
+ table , form{
+     margin-bottom: 1em;
+     margin-top: 1em;
+}
+ table {
+     width: 50%;
+     overflow: hidden;
+     float: left;
+}
+/*clearing float of text following table in delivery page*/
+ #delivery {
+     float: none;
+     clear: both;
+     display: block;
+}
+/*formatting non-navigational unsorted lists*/
+ .plainlist {
+     margin-bottom: 1em;
+     margin-top: 1em;
+     font-size: 0.75em;
+}
+ .plainlist {
+     list-style-type: square;
+     list-style-position: inside;
+}
+
+.current  {
+ 	background-color:   #56FF9F;
+	border-radius: 0.375em;
+}
+/*form position upon screen adjustment and form/table  element styling/positioning*/
+ @media screen and (min-width: 350px) {
+     form {
+         width: 50%;
+         float: left;
+    }
+}
+ label {
+     font-weight: bold;
+     width: 40%;
+     float: left;
+}
+ fieldset{
+     margin: 1em;
+     padding: 1em ;
+     border: 4px solid #45CC7F;
+     border-radius: 0.375em;
+}
+ .controlgroup {
+     padding-bottom: 1em;
+     clear: left;
+}
+ input [type=text], [type=email], textarea {
+     width: 55%;
+     padding-bottom: 1em;
+}
+ textarea{
+     height: 10em;
+}
+ legend {
+     font-weight: normal;
+}
+ input[type=submit] {
+     border: 2px solid #236841;
+	 border-radius: 0.375em;
+	 padding: 0.3em; 
+}
+ td , table, th {
+     border: 1px solid #96a6b9;
+}
+ table{
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+ td , th {
+     padding: 0.25em 0.5em 0.25em 0.5em;
+}
+ td {
+     text-align: center;
+}
+ th {
+     background-color: #A2FFCB;
+     color: #236841;
+}
+/*clearing float of footer where it's not cleared from before*/
+ footer {
+     clear: left;
+     padding-top: 1em;
+}
+/*delaing with accessibility */
+ .skiplink {
+     position: absolute;
+     left: -10000px;
+}
+ .skiplink:focus {
+     left: 0;
+     background-color: #4c712b;
+     color: #ffff00;
+}
+/*dealing with browser compatibility */
+ section, article, header, footer, main, nav, aside {
+     display: block;
+}
+/*styling navigational elements*/
+ .highlight {
+	 border-top: 2px solid #517F65;
+ }
+#headerlinks li ,  nav.highlight li  {
+ padding: 0.3em; 
+ border-radius: 0.375em;
+ margin-top: 0.6em;
+ background-color:  rgb(255, 255, 255)  ; 
+ }
+ /*placing borders around various elements and adding color, padding, margin */
+ article , section, aside , video {
+	 border: 2px solid #517F65;
+ border-radius: 0.5em;
+ padding: 1em; 
+ box-shadow: 2px 2px 0 0 #A2FFCB;
+ margin-top: 0.6em;
+background-color:  rgb(255, 255, 255)  ; 
+ 
+ }
+section.noborder {
+	 border: none; 
+	 box-shadow: none;
+ }
+ video {
+	 padding-right: 0.4em; 
+	 padding-left: 0.4em;
+ }
+ /*taking account of padding inside border when screen is adjusted and video moves*/
+ @media screen and (min-width: 1300px) and (max-width: 1430px){
+ video {
+	height: 90%; 
+	
+ }
+ }
+ /*styling links*/
+  ul {
+     list-style: none;
+}
+ a {
+     text-decoration: none;
+	 padding: 0.1em; 
+	 
+}
+  
+ a:link {
+    color: #517F65; 
+	font-weight: bold;
+}
+
+   a:visited {
+    color:  #236841; 
+ }
+
+  a:hover  {
+    color: #45CC7F ;
+}
+
+  a:active {
+    color: #56FF9F;
+	text-decoration: none;
+
+}  
